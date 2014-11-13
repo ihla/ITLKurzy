@@ -13,6 +13,10 @@
 		20151F331A14A45C00590309 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20151F321A14A45C00590309 /* Images.xcassets */; };
 		20151F361A14A45C00590309 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20151F341A14A45C00590309 /* LaunchScreen.xib */; };
 		20151F421A14A45C00590309 /* ITLKurzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151F411A14A45C00590309 /* ITLKurzyTests.swift */; };
+		20151F4C1A14A84D00590309 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151F4B1A14A84D00590309 /* DataLoader.swift */; };
+		20151F4E1A14BEBF00590309 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151F4D1A14BEBF00590309 /* SwiftyJSON.swift */; };
+		20151F841A14E9F100590309 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151F831A14E9F100590309 /* CoursesTableViewController.swift */; };
+		20151F861A14F2CF00590309 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20151F851A14F2CF00590309 /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		20151F3B1A14A45C00590309 /* ITLKurzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITLKurzyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20151F401A14A45C00590309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20151F411A14A45C00590309 /* ITLKurzyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITLKurzyTests.swift; sourceTree = "<group>"; };
+		20151F4B1A14A84D00590309 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		20151F4D1A14BEBF00590309 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		20151F831A14E9F100590309 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		20151F851A14F2CF00590309 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,16 @@
 		20151F281A14A45C00590309 /* ITLKurzy */ = {
 			isa = PBXGroup;
 			children = (
+				20151F851A14F2CF00590309 /* test.jpg */,
+				20151F4D1A14BEBF00590309 /* SwiftyJSON.swift */,
 				20151F2B1A14A45C00590309 /* AppDelegate.swift */,
 				20151F2D1A14A45C00590309 /* ViewController.swift */,
 				20151F2F1A14A45C00590309 /* Main.storyboard */,
 				20151F321A14A45C00590309 /* Images.xcassets */,
 				20151F341A14A45C00590309 /* LaunchScreen.xib */,
 				20151F291A14A45C00590309 /* Supporting Files */,
+				20151F4B1A14A84D00590309 /* DataLoader.swift */,
+				20151F831A14E9F100590309 /* CoursesTableViewController.swift */,
 			);
 			path = ITLKurzy;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 				20151F311A14A45C00590309 /* Main.storyboard in Resources */,
 				20151F361A14A45C00590309 /* LaunchScreen.xib in Resources */,
 				20151F331A14A45C00590309 /* Images.xcassets in Resources */,
+				20151F861A14F2CF00590309 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20151F2E1A14A45C00590309 /* ViewController.swift in Sources */,
+				20151F841A14E9F100590309 /* CoursesTableViewController.swift in Sources */,
 				20151F2C1A14A45C00590309 /* AppDelegate.swift in Sources */,
+				20151F4C1A14A84D00590309 /* DataLoader.swift in Sources */,
+				20151F4E1A14BEBF00590309 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +423,7 @@
 				20151F471A14A45C00590309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20151F481A14A45C00590309 /* Build configuration list for PBXNativeTarget "ITLKurzyTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +432,7 @@
 				20151F4A1A14A45C00590309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
