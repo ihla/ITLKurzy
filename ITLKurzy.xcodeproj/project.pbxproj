@@ -17,6 +17,9 @@
 		20151F4E1A14BEBF00590309 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151F4D1A14BEBF00590309 /* SwiftyJSON.swift */; };
 		20151F841A14E9F100590309 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151F831A14E9F100590309 /* CoursesTableViewController.swift */; };
 		20151F861A14F2CF00590309 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20151F851A14F2CF00590309 /* test.jpg */; };
+		202826AC1A26233D00054D8D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 202826AB1A26233D00054D8D /* placeholder.png */; };
+		20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */; };
+		20B2C31B1A155CEA0048334B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C31A1A155CEA0048334B /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		20151F4D1A14BEBF00590309 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		20151F831A14E9F100590309 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		20151F851A14F2CF00590309 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		202826AB1A26233D00054D8D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		20B2C31A1A155CEA0048334B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,16 +91,19 @@
 		20151F281A14A45C00590309 /* ITLKurzy */ = {
 			isa = PBXGroup;
 			children = (
-				20151F851A14F2CF00590309 /* test.jpg */,
+				20151F4B1A14A84D00590309 /* DataLoader.swift */,
+				20B2C31A1A155CEA0048334B /* Course.swift */,
+				20151F831A14E9F100590309 /* CoursesTableViewController.swift */,
+				20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */,
 				20151F4D1A14BEBF00590309 /* SwiftyJSON.swift */,
 				20151F2B1A14A45C00590309 /* AppDelegate.swift */,
 				20151F2D1A14A45C00590309 /* ViewController.swift */,
 				20151F2F1A14A45C00590309 /* Main.storyboard */,
+				202826AB1A26233D00054D8D /* placeholder.png */,
+				20151F851A14F2CF00590309 /* test.jpg */,
 				20151F321A14A45C00590309 /* Images.xcassets */,
 				20151F341A14A45C00590309 /* LaunchScreen.xib */,
 				20151F291A14A45C00590309 /* Supporting Files */,
-				20151F4B1A14A84D00590309 /* DataLoader.swift */,
-				20151F831A14E9F100590309 /* CoursesTableViewController.swift */,
 			);
 			path = ITLKurzy;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 				20151F311A14A45C00590309 /* Main.storyboard in Resources */,
 				20151F361A14A45C00590309 /* LaunchScreen.xib in Resources */,
 				20151F331A14A45C00590309 /* Images.xcassets in Resources */,
+				202826AC1A26233D00054D8D /* placeholder.png in Resources */,
 				20151F861A14F2CF00590309 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20151F2E1A14A45C00590309 /* ViewController.swift in Sources */,
+				20B2C31B1A155CEA0048334B /* Course.swift in Sources */,
 				20151F841A14E9F100590309 /* CoursesTableViewController.swift in Sources */,
+				20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */,
 				20151F2C1A14A45C00590309 /* AppDelegate.swift in Sources */,
 				20151F4C1A14A84D00590309 /* DataLoader.swift in Sources */,
 				20151F4E1A14BEBF00590309 /* SwiftyJSON.swift in Sources */,
