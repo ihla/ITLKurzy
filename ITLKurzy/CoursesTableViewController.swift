@@ -18,27 +18,13 @@ class CoursesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: CellIdentifier)
-        
-        DataLoader.loadCoursesWithSuccess { (data) -> Void in
-            // data contains list of courses in JSON format
-            let jsonData = JSON(data: data)
-            if let records = jsonData["records"].arrayValue {
-//                println(records)
-                for record in records {
-                    let title: String? = record["title"].stringValue
-                    let price: String? = record["new_price"].stringValue
-                    let discount: String? = record["discount"].stringValue
-                    let date: String? = record["start_date"].stringValue
-                    let imageURL: String? = record["url_image"].stringValue
-                    let course = Course(title: title, price: price, discount: discount, date: date, imageURL: imageURL)
-                    self.courses.append(course)
-                }
-                dispatch_async(dispatch_get_main_queue(), {
-                    self.tableView.reloadData()
-                    })
-            }
-        }
+        DataLoader.loadCoursesWithSuccess( { (data) -> Void in
+            let parser = CourseJSONParser(data: data)
+            self.courses = parser.getCourses()
+            dispatch_async(dispatch_get_main_queue(), {
+                self.tableView.reloadData()
+            })
+        })
     }
 
     override func didReceiveMemoryWarning() {

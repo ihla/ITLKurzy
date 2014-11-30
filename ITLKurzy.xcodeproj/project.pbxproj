@@ -18,6 +18,7 @@
 		20151F841A14E9F100590309 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151F831A14E9F100590309 /* CoursesTableViewController.swift */; };
 		20151F861A14F2CF00590309 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20151F851A14F2CF00590309 /* test.jpg */; };
 		202826AC1A26233D00054D8D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 202826AB1A26233D00054D8D /* placeholder.png */; };
+		204276FF1A29FECB00BCEA4B /* CourseJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204276FE1A29FECB00BCEA4B /* CourseJSONParser.swift */; };
 		20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */; };
 		20B2C31B1A155CEA0048334B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C31A1A155CEA0048334B /* Course.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		20151F831A14E9F100590309 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		20151F851A14F2CF00590309 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		202826AB1A26233D00054D8D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		204276FE1A29FECB00BCEA4B /* CourseJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseJSONParser.swift; sourceTree = "<group>"; };
 		20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		20B2C31A1A155CEA0048334B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				20151F4B1A14A84D00590309 /* DataLoader.swift */,
+				204276FE1A29FECB00BCEA4B /* CourseJSONParser.swift */,
 				20B2C31A1A155CEA0048334B /* Course.swift */,
 				20151F831A14E9F100590309 /* CoursesTableViewController.swift */,
 				20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20151F2E1A14A45C00590309 /* ViewController.swift in Sources */,
+				204276FF1A29FECB00BCEA4B /* CourseJSONParser.swift in Sources */,
 				20B2C31B1A155CEA0048334B /* Course.swift in Sources */,
 				20151F841A14E9F100590309 /* CoursesTableViewController.swift in Sources */,
 				20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */,
@@ -369,6 +373,7 @@
 				INFOPLIST_FILE = ITLKurzy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -379,6 +384,7 @@
 				INFOPLIST_FILE = ITLKurzy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
