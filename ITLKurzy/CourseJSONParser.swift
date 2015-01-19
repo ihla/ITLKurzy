@@ -24,6 +24,7 @@ class CourseJSONParser: NSObject {
             for record in records {
                 let title: String? = record["title"].stringValue
                 let price: String? = record["new_price"].stringValue
+                let oldPrice: String? = record["old_price"].stringValue
                 let discount: String? = record["discount"].stringValue
                 let date: String? = record["start_date"].stringValue
                 let imageURL: String? = record["url_image"].stringValue
@@ -37,7 +38,7 @@ class CourseJSONParser: NSObject {
 //                println(contentDescription!)
 //                println()
                 
-                let course = Course(title: title, price: price, discount: discount, date: date, imageURL: imageURL,
+                let course = Course(title: title, price: price, discount: discount, oldPrice: oldPrice, date: date, imageURL: imageURL,
                                     contentDescription: contentDescription, duration: duration, type: type, orderURL: orderURL, detailURL: detailURL)
                 self.courses.append(course)
             }

@@ -10,20 +10,21 @@ import UIKit
 
 class CourseDetailViewController: UIViewController {
 
+    var course: Course?
+    
     @IBOutlet weak var scrollView: UIScrollView!
+
     @IBOutlet weak var courseTitle: UILabel!
     @IBOutlet weak var annotation: UILabel!
     
-    // test
-    let lorem = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
-
-    let loremShort = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu"
+    @IBOutlet weak var courseType: UILabel!
+    @IBOutlet weak var courseLength: UILabel!
+    @IBOutlet weak var coursePrice: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        courseTitle.text = loremShort
-        annotation.text = lorem
+        configureView()
     }
 
     override func viewDidLayoutSubviews() {
@@ -35,4 +36,44 @@ class CourseDetailViewController: UIViewController {
         scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: scrollView.contentSize.height)
     }
 
+    func configureView() {
+        if let c = course {
+            courseTitle.text = c.title
+            annotation.text = c.contentDescription
+            courseType.text = c.type == "v" ? "Víkendový" : (c.type == "d" ? "Denný" : "Viac info na web stránke kurzu")
+            coursePrice.attributedText = priceAttributedTextOfCourse(c)
+            courseLength.text = durationInDays(c.duration) ?? "Viac info na web stránke kurzu"
+        }
+    }
+    
+    func durationInDays(duration:String) -> String? {
+        if let duration = duration.toInt() {
+            var number = duration
+            var days = ""
+            switch duration {
+            case 1:
+                days = "deň"
+            case 2...4:
+                days = "dni"
+            default:
+                days = "dní"
+            }
+            return "\(number) \(days)"
+        }
+        return nil
+    }
+    
+    func priceAttributedTextOfCourse(course: Course!) -> NSAttributedString {
+        var attributedText = NSMutableAttributedString(string: "\(course.price)€")
+        
+        if course.discount != "0" {
+            let newPriceString: String = "\(course.price)€"
+            let discountString: String = "(-\(course.discount)%)"
+            let attributedTextString: String = "\(newPriceString) \(discountString)"
+            attributedText = NSMutableAttributedString(string: attributedTextString)
+            attributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: (attributedTextString as NSString).rangeOfString(discountString))
+        }
+        
+        return attributedText
+    }
 }

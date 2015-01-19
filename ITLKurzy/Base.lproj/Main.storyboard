@@ -83,7 +83,7 @@
                                     <outlet property="courseDiscount" destination="OPo-Ug-LOz" id="WEI-iM-clf"/>
                                     <outlet property="courseImage" destination="fqg-8W-acS" id="zcv-cQ-3fT"/>
                                     <outlet property="coursePrice" destination="8jy-qY-dUN" id="1N1-bp-xCo"/>
-                                    <segue destination="Eko-LQ-C9S" kind="show" id="UTl-Kd-ZAa"/>
+                                    <segue destination="Eko-LQ-C9S" kind="show" identifier="showDetail" id="UTl-Kd-ZAa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -166,10 +166,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Víkendový" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kk-cp-LJR">
-                                        <rect key="frame" x="16" y="195" width="96" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="96" id="4YR-7Z-4cg"/>
-                                        </constraints>
+                                        <rect key="frame" x="16" y="195" width="80" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -184,10 +181,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 dni" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vba-mR-uFb">
-                                        <rect key="frame" x="16" y="253" width="96" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="96" id="boL-ur-01R"/>
-                                        </constraints>
+                                        <rect key="frame" x="16" y="253" width="80" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -202,10 +196,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="125,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hw-7H-2z0">
-                                        <rect key="frame" x="16" y="311" width="96" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="96" id="kM0-Oc-RBj"/>
-                                        </constraints>
+                                        <rect key="frame" x="16" y="311" width="80" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -241,13 +232,15 @@
                                     </constraint>
                                     <constraint firstItem="U6u-HT-vEV" firstAttribute="leading" secondItem="4to-d1-4X4" secondAttribute="leading" constant="16" id="2eh-zv-Wbc"/>
                                     <constraint firstItem="7kk-cp-LJR" firstAttribute="leading" secondItem="4to-d1-4X4" secondAttribute="leading" constant="16" id="7kI-BP-dgw"/>
+                                    <constraint firstAttribute="trailing" secondItem="vba-mR-uFb" secondAttribute="trailing" constant="16" id="Adh-18-xBG"/>
                                     <constraint firstItem="PnT-Uj-1s1" firstAttribute="leading" secondItem="f29-5Z-mYW" secondAttribute="trailing" constant="8" id="Djt-TX-dmI"/>
                                     <constraint firstItem="vba-mR-uFb" firstAttribute="leading" secondItem="4to-d1-4X4" secondAttribute="leading" constant="16" id="FRh-2q-7Ti"/>
                                     <constraint firstItem="0hw-7H-2z0" firstAttribute="leading" secondItem="4to-d1-4X4" secondAttribute="leading" constant="16" id="JyP-4e-9Ia"/>
+                                    <constraint firstAttribute="trailing" secondItem="7kk-cp-LJR" secondAttribute="trailing" constant="16" id="MJn-4g-NgE"/>
                                     <constraint firstItem="f4t-xE-tL3" firstAttribute="top" secondItem="0hw-7H-2z0" secondAttribute="bottom" constant="16" id="NfZ-IH-vtt"/>
                                     <constraint firstItem="0hw-7H-2z0" firstAttribute="top" secondItem="NDb-af-HKI" secondAttribute="bottom" constant="8" id="QnI-ud-N6S"/>
                                     <constraint firstItem="f29-5Z-mYW" firstAttribute="top" secondItem="4to-d1-4X4" secondAttribute="top" constant="16" id="WQU-FL-vlu"/>
-                                    <constraint firstAttribute="trailing" secondItem="0hw-7H-2z0" secondAttribute="trailing" constant="488" id="Zqu-cA-5gl"/>
+                                    <constraint firstAttribute="trailing" secondItem="0hw-7H-2z0" secondAttribute="trailing" constant="16" id="Zqu-cA-5gl"/>
                                     <constraint firstItem="EJT-pz-uUO" firstAttribute="top" secondItem="7kk-cp-LJR" secondAttribute="bottom" constant="8" id="aOC-iE-UvZ">
                                         <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                                     </constraint>
@@ -284,7 +277,10 @@
                     </view>
                     <connections>
                         <outlet property="annotation" destination="thQ-tE-TQn" id="RCe-NT-7Vk"/>
+                        <outlet property="courseLength" destination="vba-mR-uFb" id="aqz-eW-gmp"/>
+                        <outlet property="coursePrice" destination="0hw-7H-2z0" id="BnH-VW-uoD"/>
                         <outlet property="courseTitle" destination="PnT-Uj-1s1" id="f7T-Fz-Nrw"/>
+                        <outlet property="courseType" destination="7kk-cp-LJR" id="3wn-hD-gFD"/>
                         <outlet property="scrollView" destination="4to-d1-4X4" id="yTb-mx-Bk8"/>
                     </connections>
                 </viewController>
