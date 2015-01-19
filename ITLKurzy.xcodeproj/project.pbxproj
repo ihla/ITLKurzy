@@ -21,6 +21,7 @@
 		204276FF1A29FECB00BCEA4B /* CourseJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204276FE1A29FECB00BCEA4B /* CourseJSONParser.swift */; };
 		20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */; };
 		20B2C31B1A155CEA0048334B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C31A1A155CEA0048334B /* Course.swift */; };
+		20C1168E1A6C105F00C7F4DC /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		204276FE1A29FECB00BCEA4B /* CourseJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseJSONParser.swift; sourceTree = "<group>"; };
 		20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		20B2C31A1A155CEA0048334B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				20151F2B1A14A45C00590309 /* AppDelegate.swift */,
 				20151F2D1A14A45C00590309 /* ViewController.swift */,
 				20151F2F1A14A45C00590309 /* Main.storyboard */,
+				20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */,
 				202826AB1A26233D00054D8D /* placeholder.png */,
 				20151F851A14F2CF00590309 /* test.jpg */,
 				20151F321A14A45C00590309 /* Images.xcassets */,
@@ -245,6 +248,7 @@
 				20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */,
 				20151F2C1A14A45C00590309 /* AppDelegate.swift in Sources */,
 				20151F4C1A14A84D00590309 /* DataLoader.swift in Sources */,
+				20C1168E1A6C105F00C7F4DC /* CourseDetailViewController.swift in Sources */,
 				20151F4E1A14BEBF00590309 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
