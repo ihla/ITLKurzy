@@ -282,6 +282,7 @@
                         <outlet property="courseTitle" destination="PnT-Uj-1s1" id="f7T-Fz-Nrw"/>
                         <outlet property="courseType" destination="7kk-cp-LJR" id="3wn-hD-gFD"/>
                         <outlet property="scrollView" destination="4to-d1-4X4" id="yTb-mx-Bk8"/>
+                        <outlet property="thumbnail" destination="f29-5Z-mYW" id="BM3-Fg-Fq8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOo-S1-DnR" userLabel="First Responder" sceneMemberID="firstResponder"/>

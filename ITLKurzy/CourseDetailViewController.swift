@@ -11,6 +11,7 @@ import UIKit
 class CourseDetailViewController: UIViewController {
 
     var course: Course?
+    var image: UIImage?
     
     @IBOutlet weak var scrollView: UIScrollView!
 
@@ -20,6 +21,7 @@ class CourseDetailViewController: UIViewController {
     @IBOutlet weak var courseType: UILabel!
     @IBOutlet weak var courseLength: UILabel!
     @IBOutlet weak var coursePrice: UILabel!
+    @IBOutlet weak var thumbnail: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +45,9 @@ class CourseDetailViewController: UIViewController {
             courseType.text = c.type == "v" ? "Víkendový" : (c.type == "d" ? "Denný" : "Viac info na web stránke kurzu")
             coursePrice.attributedText = priceAttributedTextOfCourse(c)
             courseLength.text = durationInDays(c.duration) ?? "Viac info na web stránke kurzu"
+        }
+        if let img = image {
+            thumbnail.image = img
         }
     }
     

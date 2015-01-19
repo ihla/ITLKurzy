@@ -119,6 +119,7 @@ class CoursesTableViewController: UITableViewController {
                 let course = courses[indexPath.row]
                 let controller = segue.destinationViewController as CourseDetailViewController
                 controller.course = course
+                controller.image = imageCache[courses[indexPath.row].imageURL]
 
             }
         }
