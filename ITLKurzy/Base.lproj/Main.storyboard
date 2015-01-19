@@ -212,6 +212,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="button_pressed"/>
+                                        <connections>
+                                            <action selector="showOrder:" destination="Eko-LQ-C9S" eventType="touchUpInside" id="btA-u7-Q6N"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-A3-tYa">
                                         <rect key="frame" x="218" y="408" width="164" height="44"/>
@@ -224,6 +227,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="button_pressed"/>
+                                        <connections>
+                                            <action selector="showWeb:" destination="Eko-LQ-C9S" eventType="touchUpInside" id="iqW-Bw-y4P"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

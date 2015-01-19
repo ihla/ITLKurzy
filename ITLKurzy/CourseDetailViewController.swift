@@ -23,6 +23,24 @@ class CourseDetailViewController: UIViewController {
     @IBOutlet weak var coursePrice: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
     
+    @IBAction func showWeb(sender: AnyObject) {
+        if let c = course {
+            if let url = NSURL(string: c.detailURL) {
+                UIApplication.sharedApplication().openURL(url)
+            }
+            
+        }
+    }
+    
+    @IBAction func showOrder(sender: AnyObject) {
+        if let c = course {
+            if let url = NSURL(string: c.orderURL) {
+                UIApplication.sharedApplication().openURL(url)
+            }
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
