@@ -31,7 +31,7 @@ class CourseDetailViewController: UIViewController {
         super.viewDidLayoutSubviews();
         // When using a Universal storyboard the default size of the scene is 600.
         // That's why the scrollView contentSize width is set the 600 if it is pinned to the both sides.
-        // We need to set the correct content size in order scroll only vertically.
+        // We need to set the correct content size in order scroll vertically only.
         // The viewDidLayoutSubviews() is the right place to do so.
         scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: scrollView.contentSize.height)
     }
