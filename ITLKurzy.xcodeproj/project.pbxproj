@@ -22,6 +22,7 @@
 		20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */; };
 		20B2C31B1A155CEA0048334B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C31A1A155CEA0048334B /* Course.swift */; };
 		20C1168E1A6C105F00C7F4DC /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */; };
+		20C116921A6D727D00C7F4DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C116911A6D727D00C7F4DC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		20B2C3181A1555AE0048334B /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		20B2C31A1A155CEA0048334B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		20C116911A6D727D00C7F4DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		20151F281A14A45C00590309 /* ITLKurzy */ = {
 			isa = PBXGroup;
 			children = (
+				20C116911A6D727D00C7F4DC /* WebViewController.swift */,
 				20151F4B1A14A84D00590309 /* DataLoader.swift */,
 				204276FE1A29FECB00BCEA4B /* CourseJSONParser.swift */,
 				20B2C31A1A155CEA0048334B /* Course.swift */,
@@ -244,6 +247,7 @@
 				20151F2E1A14A45C00590309 /* ViewController.swift in Sources */,
 				204276FF1A29FECB00BCEA4B /* CourseJSONParser.swift in Sources */,
 				20B2C31B1A155CEA0048334B /* Course.swift in Sources */,
+				20C116921A6D727D00C7F4DC /* WebViewController.swift in Sources */,
 				20151F841A14E9F100590309 /* CoursesTableViewController.swift in Sources */,
 				20B2C3191A1555AE0048334B /* CourseTableViewCell.swift in Sources */,
 				20151F2C1A14A45C00590309 /* AppDelegate.swift in Sources */,

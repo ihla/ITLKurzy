@@ -120,6 +120,7 @@ class CoursesTableViewController: UITableViewController {
                 let controller = segue.destinationViewController as CourseDetailViewController
                 controller.course = course
                 controller.image = imageCache[courses[indexPath.row].imageURL]
+                controller.hidesBottomBarWhenPushed = true
 
             }
         }
