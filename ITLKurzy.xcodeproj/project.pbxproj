@@ -23,6 +23,7 @@
 		20B2C31B1A155CEA0048334B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2C31A1A155CEA0048334B /* Course.swift */; };
 		20C1168E1A6C105F00C7F4DC /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */; };
 		20C116921A6D727D00C7F4DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C116911A6D727D00C7F4DC /* WebViewController.swift */; };
+		20E572081A9FA79F00E5351B /* CourseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E572071A9FA79F00E5351B /* CourseTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		20B2C31A1A155CEA0048334B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		20C116911A6D727D00C7F4DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		20E572071A9FA79F00E5351B /* CourseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				20151F321A14A45C00590309 /* Images.xcassets */,
 				20151F341A14A45C00590309 /* LaunchScreen.xib */,
 				20151F291A14A45C00590309 /* Supporting Files */,
+				20E572071A9FA79F00E5351B /* CourseTableViewCell.xib */,
 			);
 			path = ITLKurzy;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E572081A9FA79F00E5351B /* CourseTableViewCell.xib in Resources */,
 				20151F311A14A45C00590309 /* Main.storyboard in Resources */,
 				20151F361A14A45C00590309 /* LaunchScreen.xib in Resources */,
 				20151F331A14A45C00590309 /* Images.xcassets in Resources */,
