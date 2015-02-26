@@ -220,8 +220,8 @@
                                         <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4t-xE-tL3">
-                                        <rect key="frame" x="219" y="348" width="164" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4t-xE-tL3">
+                                        <rect key="frame" x="218" y="348" width="164" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="164" id="N2O-xA-zRd"/>
                                             <constraint firstAttribute="height" constant="44" id="TdG-Nn-w5U"/>
@@ -235,8 +235,8 @@
                                             <action selector="showOrder:" destination="Eko-LQ-C9S" eventType="touchUpInside" id="btA-u7-Q6N"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-A3-tYa">
-                                        <rect key="frame" x="219" y="408" width="164" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-A3-tYa">
+                                        <rect key="frame" x="218" y="408" width="164" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="PRX-ah-EAk"/>
                                             <constraint firstAttribute="width" constant="164" id="jMt-xU-pJr"/>
@@ -314,11 +314,11 @@
             </objects>
             <point key="canvasLocation" x="2251" y="-348"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="5C7-wR-p8V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="udr-mN-PFY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5Rt-bD-2PN"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="5Rt-bD-2PN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PlX-ee-Ph7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
