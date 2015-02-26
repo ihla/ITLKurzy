@@ -28,6 +28,7 @@
 		20E5720C1A9FB64500E5351B /* megaphone-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E5720B1A9FB64500E5351B /* megaphone-32.png */; };
 		20E572101A9FBBF400E5351B /* OpenCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E5720F1A9FBBF400E5351B /* OpenCoursesViewController.swift */; };
 		20E572121A9FBC8900E5351B /* Top10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E572111A9FBC8900E5351B /* Top10ViewController.swift */; };
+		20E572141A9FBF5600E5351B /* itl-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E572131A9FBF5600E5351B /* itl-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		20E5720B1A9FB64500E5351B /* megaphone-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "megaphone-32.png"; sourceTree = "<group>"; };
 		20E5720F1A9FBBF400E5351B /* OpenCoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCoursesViewController.swift; sourceTree = "<group>"; };
 		20E572111A9FBC8900E5351B /* Top10ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Top10ViewController.swift; sourceTree = "<group>"; };
+		20E572131A9FBF5600E5351B /* itl-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itl-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				202826AB1A26233D00054D8D /* placeholder.png */,
 				20151F851A14F2CF00590309 /* test.jpg */,
 				20151F321A14A45C00590309 /* Images.xcassets */,
+				20E572131A9FBF5600E5351B /* itl-logo.png */,
 				20E572091A9FB57600E5351B /* content-32.png */,
 				20E5720B1A9FB64500E5351B /* megaphone-32.png */,
 				20151F2F1A14A45C00590309 /* Main.storyboard */,
@@ -239,6 +242,7 @@
 			files = (
 				20E572081A9FA79F00E5351B /* CourseTableViewCell.xib in Resources */,
 				20E5720C1A9FB64500E5351B /* megaphone-32.png in Resources */,
+				20E572141A9FBF5600E5351B /* itl-logo.png in Resources */,
 				20151F311A14A45C00590309 /* Main.storyboard in Resources */,
 				20151F361A14A45C00590309 /* LaunchScreen.xib in Resources */,
 				20151F331A14A45C00590309 /* Images.xcassets in Resources */,
