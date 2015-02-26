@@ -23,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func customizeAppearance() {
-//        let barColor = UIColor(red: 22.0/255, green: 176.0/255, blue: 224.0/255, alpha: 1)
-//        UINavigationBar.appearance().backgroundColor = barColor
-//        UITabBar.appearance().backgroundColor = barColor
+        let barColor = UIColor(red: 22.0/255, green: 176.0/255, blue: 224.0/255, alpha: 1)
+        UINavigationBar.appearance().backgroundColor = barColor
+        UITabBar.appearance().backgroundColor = barColor
     }
     
     func applicationWillResignActive(application: UIApplication) {

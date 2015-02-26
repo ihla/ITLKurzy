@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="CYp-fe-3FP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h6z-Xr-5su">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4to-d1-4X4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANOTÁCIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-s2-Mqb">
                                         <rect key="frame" x="16" y="108" width="86" height="21"/>
@@ -190,7 +190,7 @@
             <objects>
                 <tabBarController id="xxV-SN-O0n" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="CPo-XT-udf">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="CPo-XT-udf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -313,7 +313,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i5p-k6-4k6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Otvorené kurzy" image="content-32.png" id="ZB0-Fp-kLi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vWg-hY-p1v">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vWg-hY-p1v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -332,7 +332,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ru1-To-6Nu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Top 10" image="megaphone-32.png" id="e8q-3P-PdZ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Ok-oH-LSP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="1Ok-oH-LSP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
