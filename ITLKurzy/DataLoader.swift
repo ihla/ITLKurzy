@@ -10,6 +10,7 @@ import Foundation
 
 // URL of JSON data to be loaded
 let CoursesURL = NSURL(string: "http://www.itlearning.sk/edi/json.php")!
+let Top10URL = NSURL(string: "http://www.itlearning.sk/edi/top10.php")!
 
 /// Utility class containing convenience methods for downloading data.
 class DataLoader {
@@ -17,6 +18,14 @@ class DataLoader {
     /// Loads courses JSON data in background and returns it as NSData upon success.
     class func loadCoursesWithSuccess(succes: ((data: NSData!) -> Void)) {
         loadDataFromURL(CoursesURL, completion: { (data, error) -> Void in
+            if let coursesData = data {
+                succes(data: coursesData)
+            }
+        })
+    }
+    
+    class func loadTop10WithSuccess(succes: ((data: NSData!) -> Void)) {
+        loadDataFromURL(Top10URL, completion: { (data, error) -> Void in
             if let coursesData = data {
                 succes(data: coursesData)
             }

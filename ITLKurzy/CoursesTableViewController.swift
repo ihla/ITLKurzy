@@ -20,13 +20,6 @@ class CoursesTableViewController: UITableViewController {
         
         self.tableView.registerNib(UINib(nibName: "CourseTableViewCell", bundle: nil), forCellReuseIdentifier: CellIdentifier)
         
-        DataLoader.loadCoursesWithSuccess( { (data) -> Void in
-            let parser = CourseJSONParser(data: data)
-            self.courses = parser.getCourses()
-            dispatch_async(dispatch_get_main_queue(), {
-                self.tableView.reloadData()
-            })
-        })
     }
 
     override func didReceiveMemoryWarning() {

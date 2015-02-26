@@ -242,7 +242,7 @@
         <!--Top 10-->
         <scene sceneID="ORh-WQ-WbG">
             <objects>
-                <tableViewController id="0Hc-IK-5vC" userLabel="Top 10" customClass="CoursesTableViewController" customModule="ITLKurzy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0Hc-IK-5vC" userLabel="Top 10" customClass="Top10ViewController" customModule="ITLKurzy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="saD-aK-thu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,7 +260,7 @@
                             <outlet property="delegate" destination="0Hc-IK-5vC" id="kSE-42-goj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FsE-Kd-ais"/>
+                    <navigationItem key="navigationItem" title="Top 10" id="FsE-Kd-ais"/>
                     <connections>
                         <segue destination="Eko-LQ-C9S" kind="show" identifier="showDetail" id="rXN-vE-C5D"/>
                     </connections>
@@ -272,7 +272,7 @@
         <!--Otvorené kurzy-->
         <scene sceneID="wa1-Pp-acm">
             <objects>
-                <tableViewController id="QcJ-dO-2Sp" userLabel="Otvorené kurzy" customClass="CoursesTableViewController" customModule="ITLKurzy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="QcJ-dO-2Sp" userLabel="Otvorené kurzy" customClass="OpenCoursesViewController" customModule="ITLKurzy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jxd-PB-1By">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,7 +290,7 @@
                             <outlet property="delegate" destination="QcJ-dO-2Sp" id="V1w-85-j5F"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="UOl-3w-Aif"/>
+                    <navigationItem key="navigationItem" title="Otvorené kurzy" id="UOl-3w-Aif"/>
                     <connections>
                         <segue destination="Eko-LQ-C9S" kind="show" identifier="showDetail" id="Ml5-6r-ThL"/>
                     </connections>
