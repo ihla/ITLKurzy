@@ -24,6 +24,8 @@
 		20C1168E1A6C105F00C7F4DC /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */; };
 		20C116921A6D727D00C7F4DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C116911A6D727D00C7F4DC /* WebViewController.swift */; };
 		20E572081A9FA79F00E5351B /* CourseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E572071A9FA79F00E5351B /* CourseTableViewCell.xib */; };
+		20E5720A1A9FB57600E5351B /* content-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E572091A9FB57600E5351B /* content-32.png */; };
+		20E5720C1A9FB64500E5351B /* megaphone-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E5720B1A9FB64500E5351B /* megaphone-32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		20C116911A6D727D00C7F4DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		20E572071A9FA79F00E5351B /* CourseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseTableViewCell.xib; sourceTree = "<group>"; };
+		20E572091A9FB57600E5351B /* content-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content-32.png"; sourceTree = "<group>"; };
+		20E5720B1A9FB64500E5351B /* megaphone-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "megaphone-32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,14 +112,16 @@
 				20151F4D1A14BEBF00590309 /* SwiftyJSON.swift */,
 				20151F2B1A14A45C00590309 /* AppDelegate.swift */,
 				20151F2D1A14A45C00590309 /* ViewController.swift */,
-				20151F2F1A14A45C00590309 /* Main.storyboard */,
 				20C1168D1A6C105F00C7F4DC /* CourseDetailViewController.swift */,
 				202826AB1A26233D00054D8D /* placeholder.png */,
 				20151F851A14F2CF00590309 /* test.jpg */,
 				20151F321A14A45C00590309 /* Images.xcassets */,
+				20E572091A9FB57600E5351B /* content-32.png */,
+				20E5720B1A9FB64500E5351B /* megaphone-32.png */,
+				20151F2F1A14A45C00590309 /* Main.storyboard */,
+				20E572071A9FA79F00E5351B /* CourseTableViewCell.xib */,
 				20151F341A14A45C00590309 /* LaunchScreen.xib */,
 				20151F291A14A45C00590309 /* Supporting Files */,
-				20E572071A9FA79F00E5351B /* CourseTableViewCell.xib */,
 			);
 			path = ITLKurzy;
 			sourceTree = "<group>";
@@ -226,10 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E572081A9FA79F00E5351B /* CourseTableViewCell.xib in Resources */,
+				20E5720C1A9FB64500E5351B /* megaphone-32.png in Resources */,
 				20151F311A14A45C00590309 /* Main.storyboard in Resources */,
 				20151F361A14A45C00590309 /* LaunchScreen.xib in Resources */,
 				20151F331A14A45C00590309 /* Images.xcassets in Resources */,
 				202826AC1A26233D00054D8D /* placeholder.png in Resources */,
+				20E5720A1A9FB57600E5351B /* content-32.png in Resources */,
 				20151F861A14F2CF00590309 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

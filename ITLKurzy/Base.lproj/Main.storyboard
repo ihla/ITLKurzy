@@ -16,7 +16,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="udr-mN-PFY" kind="relationship" relationship="viewControllers" id="qIA-gE-pKk"/>
-                        <segue destination="nlU-dl-Ky5" kind="relationship" relationship="viewControllers" id="LXL-M7-8ic"/>
+                        <segue destination="qU5-y4-c9t" kind="relationship" relationship="viewControllers" id="wY7-Wx-oH3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S23-4P-vgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,11 +220,11 @@
             </objects>
             <point key="canvasLocation" x="2251" y="-348"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Otvorené kurzy-->
         <scene sceneID="5C7-wR-p8V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="udr-mN-PFY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="5Rt-bD-2PN"/>
+                    <tabBarItem key="tabBarItem" title="Otvorené kurzy" image="content-32.png" id="5Rt-bD-2PN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PlX-ee-Ph7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -239,10 +239,40 @@
             </objects>
             <point key="canvasLocation" x="840" y="-347"/>
         </scene>
-        <!--Courses Table View Controller-->
+        <!--Top 10-->
+        <scene sceneID="ORh-WQ-WbG">
+            <objects>
+                <tableViewController id="0Hc-IK-5vC" userLabel="Top 10" customClass="CoursesTableViewController" customModule="ITLKurzy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="saD-aK-thu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="BLN-Nh-NUq" customClass="CourseTableViewCell" customModule="ITLKurzy" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BLN-Nh-NUq" id="L44-PD-7nM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0Hc-IK-5vC" id="Ktx-qk-t8e"/>
+                            <outlet property="delegate" destination="0Hc-IK-5vC" id="kSE-42-goj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="FsE-Kd-ais"/>
+                    <connections>
+                        <segue destination="Eko-LQ-C9S" kind="show" identifier="showDetail" id="rXN-vE-C5D"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xcj-K1-0Wl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="390"/>
+        </scene>
+        <!--Otvorené kurzy-->
         <scene sceneID="wa1-Pp-acm">
             <objects>
-                <tableViewController id="QcJ-dO-2Sp" customClass="CoursesTableViewController" customModule="ITLKurzy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="QcJ-dO-2Sp" userLabel="Otvorené kurzy" customClass="CoursesTableViewController" customModule="ITLKurzy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jxd-PB-1By">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBi-28-ofP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515" y="315"/>
+            <point key="canvasLocation" x="1573" y="1143"/>
         </scene>
         <!--Item-->
         <scene sceneID="9Fu-5l-DeN">
@@ -308,13 +338,37 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rh5-UC-XuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840" y="315"/>
+            <point key="canvasLocation" x="898" y="1143"/>
+        </scene>
+        <!--Top 10-->
+        <scene sceneID="185-iB-Uc6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qU5-y4-c9t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Top 10" image="megaphone-32.png" id="hcZ-ET-Dtx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g7B-6p-guk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Hc-IK-5vC" kind="relationship" relationship="rootViewController" id="Haj-PU-gy4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgR-Nr-Qf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="390"/>
         </scene>
     </scenes>
     <resources>
         <image name="button_normal" width="164" height="44"/>
         <image name="button_normal.png" width="1" height="1"/>
         <image name="button_pressed" width="164" height="44"/>
+        <image name="content-32.png" width="32" height="32"/>
+        <image name="megaphone-32.png" width="32" height="32"/>
         <image name="placeholder.png" width="70" height="70"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rXN-vE-C5D"/>
+    </inferredMetricsTieBreakers>
 </document>
