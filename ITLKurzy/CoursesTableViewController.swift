@@ -64,12 +64,17 @@ class CoursesTableViewController: UITableViewController {
         }
         cell.courseImage.image = UIImage(named: "placeholder")
         var imageURL = courses[indexPath.row].imageURL
-//        var imageURL = "http://www.itlearning.sk/ikony-kurzy/53.jpg"
         var image = imageCache[imageURL]
         if image == nil {
+            // image not chached
             if let url = NSURL(string: imageURL) {
+                // 1. create URL load request
                 let request: NSURLRequest = NSURLRequest(URL: url)
-                NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
+                // 2. load data async
+                NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {
+                    
+                    (response, data, error) in
+                    
                     if error == nil {
                         image = UIImage(data: data)
                         // check if image contains valid data (in case of 4xx the received data is invalid)
@@ -78,11 +83,9 @@ class CoursesTableViewController: UITableViewController {
                            image = UIImage(named: "placeholder")
                         }
                         self.imageCache[imageURL] = image
-                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                            if let cellToUpdate = tableView.cellForRowAtIndexPath(indexPath) as? CourseTableViewCell {
-                                cellToUpdate.courseImage.image = image
-                            }
-                        })
+                        if let cellToUpdate = self.tableView.cellForRowAtIndexPath(indexPath) as? CourseTableViewCell {
+                            cellToUpdate.courseImage.image = image
+                        }
                     } else {
                         println("Error: \(error.localizedDescription)")
                     }
@@ -92,6 +95,7 @@ class CoursesTableViewController: UITableViewController {
                 println("Error: \(imageURL) is not valid URL")
             }
         } else {
+            // image cached
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 if let cellToUpdate = tableView.cellForRowAtIndexPath(indexPath) as? CourseTableViewCell {
                     cellToUpdate.courseImage.image = image

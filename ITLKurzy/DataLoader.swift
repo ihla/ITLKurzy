@@ -37,10 +37,13 @@ class DataLoader {
     /// Returns data (optional) and error (optional) through completion handler.
     class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
         
+        // 1. create session
         var session = NSURLSession.sharedSession()
         
-        // create background task
-        let loadDataTask = session.dataTaskWithURL(url, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
+        // 2. create background task for HTTP-GET request handling
+        let loadDataTask = session.dataTaskWithURL(url, completionHandler: {
+
+            data, response, error -> Void in
             
             // check error and return data value accordingly
             if let responseError = error {
@@ -58,8 +61,10 @@ class DataLoader {
                 }
             }
         })
+        
         // call resume() to start task
         loadDataTask.resume()
     }
+    
 }
 
