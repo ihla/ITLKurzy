@@ -70,8 +70,8 @@ class CourseDetailViewController: UIViewController {
     }
     
     func durationInDays(duration:String) -> String? {
-        if let duration = duration.toInt() {
-            var number = duration
+        if let duration = Int(duration) {
+            let number = duration
             var days = ""
             switch duration {
             case 1:

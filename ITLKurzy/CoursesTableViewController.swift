@@ -43,19 +43,19 @@ class CoursesTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath) as CourseTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath) as! CourseTableViewCell
 
         cell.courseDescription.text = courses[indexPath.row].title
         cell.coursePrice.text = "\(courses[indexPath.row].price)€"
-        var discount: String? = courses[indexPath.row].discount != "0" ? courses[indexPath.row].discount : nil
+        let discount: String? = courses[indexPath.row].discount != "0" ? courses[indexPath.row].discount : nil
         if discount != nil {
             cell.courseDiscount.text = "-\(discount!)%"
         } else {
             cell.courseDiscount.text = ""
         }
-        if let timeInterval = courses[indexPath.row].date.toInt() {
-            var date = NSDate(timeIntervalSince1970: NSTimeInterval(timeInterval))
-            var dateFormatter = NSDateFormatter()
+        if let timeInterval = Int(courses[indexPath.row].date) {
+            let date = NSDate(timeIntervalSince1970: NSTimeInterval(timeInterval))
+            let dateFormatter = NSDateFormatter()
 //            dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
             dateFormatter.dateFormat = "dd.MM.yyyy"
             
@@ -63,7 +63,7 @@ class CoursesTableViewController: UITableViewController {
             
         }
         cell.courseImage.image = UIImage(named: "placeholder")
-        var imageURL = courses[indexPath.row].imageURL
+        let imageURL = courses[indexPath.row].imageURL
         var image = imageCache[imageURL]
         if image == nil {
             // image not chached
@@ -76,9 +76,9 @@ class CoursesTableViewController: UITableViewController {
                     (response, data, error) in
                     
                     if error == nil {
-                        image = UIImage(data: data)
+                        image = UIImage(data: data!)
                         // check if image contains valid data (in case of 4xx the received data is invalid)
-                        var ref = image?.CGImage
+                        let ref = image?.CGImage
                         if ref == nil {
                            image = UIImage(named: "placeholder")
                         }
@@ -87,12 +87,12 @@ class CoursesTableViewController: UITableViewController {
                             cellToUpdate.courseImage.image = image
                         }
                     } else {
-                        println("Error: \(error.localizedDescription)")
+                        print("Error: \(error!.localizedDescription)")
                     }
                 })
                 
             } else {
-                println("Error: \(imageURL) is not valid URL")
+                print("Error: \(imageURL) is not valid URL")
             }
         } else {
             // image cached
@@ -122,9 +122,9 @@ class CoursesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "showDetail" {
-            if let indexPath = tableView.indexPathForSelectedRow() {
+            if let indexPath = tableView.indexPathForSelectedRow {
                 let course = courses[indexPath.row]
-                let controller = segue.destinationViewController as CourseDetailViewController
+                let controller = segue.destinationViewController as! CourseDetailViewController
                 controller.course = course
                 controller.image = imageCache[courses[indexPath.row].imageURL]
                 controller.hidesBottomBarWhenPushed = true

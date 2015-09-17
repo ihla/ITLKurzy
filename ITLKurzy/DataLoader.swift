@@ -38,7 +38,7 @@ class DataLoader {
     class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
         
         // 1. create session
-        var session = NSURLSession.sharedSession()
+        let session = NSURLSession.sharedSession()
         
         // 2. create background task for HTTP-GET request handling
         let loadDataTask = session.dataTaskWithURL(url, completionHandler: {
@@ -53,7 +53,7 @@ class DataLoader {
                 // HTTP response receieved - check code
                 if httpResponse.statusCode != 200 {
                     // status code is not OK (200), return  error containing HTTP response code
-                    var statusError = NSError(domain:"sk.itlearning", code:httpResponse.statusCode, userInfo:[NSLocalizedDescriptionKey : "HTTP status code has unexpected value."])
+                    let statusError = NSError(domain:"sk.itlearning", code:httpResponse.statusCode, userInfo:[NSLocalizedDescriptionKey : "HTTP status code has unexpected value."])
                     completion(data: nil, error: statusError)
                 } else {
                     // HTTP response is 200 = OK

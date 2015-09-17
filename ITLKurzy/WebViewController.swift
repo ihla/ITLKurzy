@@ -25,7 +25,7 @@ class WebViewController: UIViewController {
         super.viewDidLoad()
 
         if let url = NSURL(string:"http://www.itlearning.sk/ponuka-kurzov") {
-            var req = NSURLRequest(URL:url)
+            let req = NSURLRequest(URL:url)
             self.webView!.loadRequest(req)
         }
     }
