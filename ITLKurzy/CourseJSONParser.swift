@@ -34,9 +34,9 @@ class CourseJSONParser: NSObject {
             let orderURL: String? = record["url_order"].stringValue
             let detailURL: String? = record["url_detail"].stringValue
             
-            //                println(title!)
-            //                println(contentDescription!)
-            //                println()
+            //                print(title!)
+            //                print(contentDescription!)
+            //                print()
             
             let course = Course(title: title, price: price, discount: discount, oldPrice: oldPrice, date: date, imageURL: imageURL,
                 contentDescription: contentDescription, duration: duration, type: type, orderURL: orderURL, detailURL: detailURL)
